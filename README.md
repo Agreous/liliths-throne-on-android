@@ -1,11 +1,11 @@
 # 莉莉丝的王座安卓手机运行教程(施工中)
-##前言
+前言
 由于莉莉丝的王座是使用JAVA进行开发的游戏，在一开始就没有考虑过可移植性，因此本文将通过使用termux安装proot linux容器的方式来曲线实现在安卓手机上游玩莉莉丝的王座。
 
-###警告
+警告
 因为我们需要在手机上额外跑一个近乎完整的linux桌面环境，因此需要有至少6GB的系统内存和至少10GB的储存空间才能完成这一教程。
 
-##安装应用程序
+安装应用程序
 为了安装proot容器和linux桌面环境并实现一键启动，我们需要安装以下app：[termux](https://github.com/termux/termux-app),[termux-x11](https://github.com/termux/termux-x11),[termux-api](https://github.com/termux/termux-api),[termux-widget](https://github.com/termux/termux-widget)。点击链接进入对应github页面之后下载releases中最新发布版本，对于termux,选择后缀带有universal的安装包，对于termux-x11,进入github页面后点击Actions页面选择最新build下载带有universal后缀的压缩包解压得到安装包。
 
 ## 初步设置
