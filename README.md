@@ -227,4 +227,5 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-archlinux/#5-%E5%AE%89%E8%A3%9D%E6%A1%8C%E9%9D%A2%E7%92%B0%E5%A2%83%E5%92%8C%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
+
 [参考安装视频](https://www.bilibili.com/video/BV1we4y1p73H)
