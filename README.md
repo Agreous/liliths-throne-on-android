@@ -7,13 +7,13 @@
 
 ### 安装应用程序
 为了安装proot容器和linux桌面环境并实现一键启动，我们需要安装以下app：[termux](https://github.com/termux/termux-app),[termux-x11](https://github.com/termux/termux-x11),[termux-api](https://github.com/termux/termux-api),[termux-widget](https://github.com/termux/termux-widget)。点击链接进入对应github页面之后下载releases中最新发布版本，对于termux,选择后缀带有universal的安装包，对于termux-x11,进入github页面后点击Actions页面选择最新build下载带有universal后缀的压缩包解压得到安装包。
-![Screenshot_2023-10-14-22-28-09-475_com termux 1](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/3d364deb-0bbc-4f64-b017-ad726b341fee)
-
-![Screenshot_2023-10-14-22-28-15-439_com termux 1](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/f0b4d927-ca29-441c-a743-d9413222996f)
-
 
 ## 初步设置
 打开termux之后，下滑通知栏，点击termux通知中的`ACQUIRE WAKELOCK`按钮使termux可以在后台运行。之后在termux中输入`termux-change-repo`命令对termux的默认软件源进行替换。输入命令后会进入一个伪图形界面，第一步直接按回车跳过，第二部用termux工具栏提供的方向键向下移动到mirrors of china选项后按空格选择，按回车继续。随后输入以下命令执行以安装后续所需的软件包和更新系统。
+![Screenshot_2023-10-14-22-28-09-475_com termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/03f97e48-89f9-43ce-b89d-32cdf1bbc508)
+
+![Screenshot_2023-10-14-22-28-15-439_com termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/09ecd443-7fdc-4e3d-a4d2-93252caaa08f)
+
 
 ```
 pkg upgrade
@@ -220,7 +220,10 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 ## 如何在手机与proot容器之间共享文件
 下载并安装[MT管理器](https://mt2.cn/download/)，在termux程序下输入`termux-setup-storage`,对给出的任何提示无脑按y，之后打开MT管理器，点击程序主界面左上角的三条横线就可以看到Termux Home选项卡了。我们安装的proot容器文件位于该文件夹内的/installed-rootfs/archlinux文件夹当中。
-![Screenshot_2023-10-14-22-19-44-454_bin mt plus 1](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/6aa3577e-7f92-4239-a28a-94255d31b008)
+
+## 最终效果
+![Screenshot_2023-10-13-13-50-11-539_com termux x11](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/46424a9c-b26c-42f1-b61b-c6c195bb7726)
+
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-archlinux/#5-%E5%AE%89%E8%A3%9D%E6%A1%8C%E9%9D%A2%E7%92%B0%E5%A2%83%E5%92%8C%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
