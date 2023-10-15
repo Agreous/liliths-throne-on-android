@@ -233,6 +233,9 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 或者你也可以自己编译，但那就是另一段故事了
 
+### 我看作者提供的jar版本游戏是全平台通用的啊，为什么到你这里就需要分平台了呢
+因为作者提供的jar版本游戏不包含任何依赖库文件，而依赖之一javafx在很多平台的高版本openjdk中并不包含，所以直接运行作者给出的jar文件通常会报错。为游戏打包依赖库文件可以解决这个问题，但是就需要根据目标平台来打包所需的依赖库文件了。因此就失去了平台通用性。
+
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-archlinux/#5-%E5%AE%89%E8%A3%9D%E6%A1%8C%E9%9D%A2%E7%92%B0%E5%A2%83%E5%92%8C%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
