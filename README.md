@@ -21,6 +21,7 @@ pkg install proot-distro pulseaudio vim virglrenderer-android x11-repo termux-x1
 ```
 ### 安装linux容器
 输入以下命令安装一个arch linux的proot容器，你可以使用`proot-distro list`命令来查看所有可用的发行版，但是本文只会以arch linux作为教程基础。
+（在进行这一步的时候可能需要挂梯子）
 
 ```
 proot-distro install archlinux
@@ -214,6 +215,9 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 ```
 保存退出后输入`source /etc/profile`重载文件以应用环境变量。随后输入`java --version`以确认环境变量是否起效。
+![Screenshot_2023-10-15-15-54-51-417_com termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/f4da0945-b718-401c-a19a-80dc1b1253a1)
+成功时的显示如图所示
+
 
 ## 关于游戏启动
 启动游戏的方法很简单，在游戏根目录打开终端，输入`java -jar 游戏主文件.jar`就可以启动游戏，但需要注意的是`java -jar`这一命令对文件名有着较为严格的要求，在使用前需要将游戏主文件文件名内的空格和特殊字符删除。
