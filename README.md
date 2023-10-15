@@ -228,6 +228,11 @@ export PATH=${JAVA_HOME}/bin:$PATH
 ## 最终效果
 ![Screenshot_2023-10-13-13-50-11-539_com termux x11](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/46424a9c-b26c-42f1-b61b-c6c195bb7726)
 
+## 那么，该从哪里获取aarch64版本的游戏呢
+[sir,this way](https://github.com/CKRainbow/liliths-throne-localization/tags)
+
+或者你也可以自己编译，但那就是另一段故事了
+
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-archlinux/#5-%E5%AE%89%E8%A3%9D%E6%A1%8C%E9%9D%A2%E7%92%B0%E5%A2%83%E5%92%8C%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
