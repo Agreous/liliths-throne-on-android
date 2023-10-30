@@ -17,7 +17,8 @@
 
 ```
 pkg upgrade
-pkg install proot-distro pulseaudio vim virglrenderer-android x11-repo termux-x11-nightly
+pkg install x11-repo root-repo tur-repo
+pkg install proot-distro pulseaudio vim virglrenderer-android termux-x11-nightly
 ```
 ### 安装linux容器
 输入以下命令安装一个arch linux的proot容器，你可以使用`proot-distro list`命令来查看所有可用的发行版，但是本文只会以arch linux作为教程基础。
