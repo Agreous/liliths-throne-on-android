@@ -210,7 +210,7 @@ chmod +x .shortcuts/startproot.sh
 
 ## 安装JAVA环境
 debian的软件源中有openjdk,因此可以直接安装。
-输入`apt install openjdk-17-jdk`即可安装。
+输入`sudo apt install openjdk-17-jdk`即可安装。
 
 
 ## 关于游戏启动
@@ -222,6 +222,8 @@ debian的软件源中有openjdk,因此可以直接安装。
 ## 最终效果
 ![Screenshot_2023-10-13-13-50-11-539_com termux x11](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/46424a9c-b26c-42f1-b61b-c6c195bb7726)
 
+### FAQ
+
 #### 那么，该从哪里获取aarch64版本的游戏呢
 [sir,this way](https://github.com/CKRainbow/liliths-throne-localization/tags)
 
@@ -230,6 +232,8 @@ debian的软件源中有openjdk,因此可以直接安装。
 #### 我看作者提供的jar版本游戏是全平台通用的啊，为什么到你这里就需要分平台了呢
 因为作者提供的jar版本游戏不包含任何依赖库文件，而依赖之一javafx在很多平台的高版本openjdk中并不包含，就算是提供了openjfx(一个东西)包的平台通常也因为分包安装导致java无法直接调用需要的库文件，导致运行作者给出的jar文件通常会报错。为游戏打包依赖库文件可以解决这个问题，但是就需要根据目标平台来打包所需的依赖库文件了。因此就失去了平台通用性。
 
+#### 之前的教程是以arch linux为基础的，为什么要换成debian呢
+因为大费周章安装一个linux容器就为了玩一个黄油实在是太浪费了，日后你还可以参照其他教程为这个容器安装box86/box64和wine来玩更多黄油，而arm版的arch linux不能提供32位的库文件，会对之后安装这些东西造成阻碍。因此我更换了教程的发行版。
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-debian/)
