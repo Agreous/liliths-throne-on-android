@@ -16,6 +16,7 @@
 ![Screenshot_20231110-153716_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/337d9b84-2c3b-4192-a5d2-6f7a9c0d2daa)
 ![Screenshot_20231110-165021_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/a8a49d85-5f39-4183-a5f2-f8682691407e)
 
+
 安装好软件源之后再次输入`termux-change-repo`命令对新安装的软件源进行换源，如图所示
 ![Screenshot_20231110-154006_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/e6f16bda-e6a6-4678-88f2-c4ec9748e54b)
 ![Screenshot_20231110-154023_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/f9a37419-07ed-4196-bd35-3562caea9b19)
@@ -23,11 +24,8 @@
 
 
 
-```
-pkg upgrade
-pkg install x11-repo root-repo tur-repo
-pkg install proot-distro pulseaudio vim virglrenderer-android termux-x11-nightly
-```
+最后输入`pkg install proot-distro pulseaudio vim virglrenderer-android termux-x11-nightly`安装所需的termux软件包。
+
 ### 安装linux容器
 输入以下命令安装一个arch linux的proot容器，你可以使用`proot-distro list`命令来查看所有可用的发行版，但是本文只会以debian作为教程基础。
 （在进行这一步的时候可能需要挂梯子）
