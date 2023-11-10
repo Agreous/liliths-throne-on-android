@@ -12,7 +12,7 @@
 打开termux之后，下滑通知栏，点击termux通知中的`ACQUIRE WAKELOCK`按钮使termux可以在后台运行。
 ![Screenshot_20231110-153646_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/dffd57db-6d3d-4fc2-90e4-bff5baa46053)
 
-之后在termux中输入`termux-change-repo`命令对termux的默认软件源进行替换。输入命令后会进入一个伪图形界面，第一步直接按回车跳过，第二部用termux工具栏提供的方向键向下移动到需要的镜像源后按空格选择，按回车继续。随后输入`pkg intall x11-repo root-repo tur-repo`安装需要的软件源。
+之后在termux中输入`termux-change-repo`命令对termux的默认软件源进行替换。输入命令后会进入一个伪图形界面，第一步直接按回车跳过，第二部用termux工具栏提供的方向键向下移动到需要的镜像源后按空格选择，按回车继续。随后输入`pkg install x11-repo root-repo tur-repo`安装需要的软件源。
 ![Screenshot_20231110-153716_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/337d9b84-2c3b-4192-a5d2-6f7a9c0d2daa)
 ![Screenshot_20231110-165021_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/a8a49d85-5f39-4183-a5f2-f8682691407e)
 
