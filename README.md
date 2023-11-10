@@ -9,10 +9,18 @@
 为了安装proot容器和linux桌面环境并实现一键启动，我们需要安装以下app：[termux](https://github.com/termux/termux-app),[termux-x11](https://github.com/termux/termux-x11),[termux-api](https://github.com/termux/termux-api),[termux-widget](https://github.com/termux/termux-widget)。点击链接进入对应github页面之后下载releases中最新发布版本，对于termux,选择后缀带有universal的安装包，对于termux-x11,进入github页面后点击Actions页面选择最新build下载带有universal后缀的压缩包解压得到安装包。
 
 ## 初步设置
-打开termux之后，下滑通知栏，点击termux通知中的`ACQUIRE WAKELOCK`按钮使termux可以在后台运行。之后在termux中输入`termux-change-repo`命令对termux的默认软件源进行替换。输入命令后会进入一个伪图形界面，第一步直接按回车跳过，第二部用termux工具栏提供的方向键向下移动到mirrors of china选项后按空格选择，按回车继续。随后输入以下命令执行以安装后续所需的软件包和更新系统。
-![Screenshot_2023-10-14-22-28-09-475_com termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/03f97e48-89f9-43ce-b89d-32cdf1bbc508)
+打开termux之后，下滑通知栏，点击termux通知中的`ACQUIRE WAKELOCK`按钮使termux可以在后台运行。
+![Screenshot_20231110-153646_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/dffd57db-6d3d-4fc2-90e4-bff5baa46053)
 
-![Screenshot_2023-10-14-22-28-15-439_com termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/09ecd443-7fdc-4e3d-a4d2-93252caaa08f)
+之后在termux中输入`termux-change-repo`命令对termux的默认软件源进行替换。输入命令后会进入一个伪图形界面，第一步直接按回车跳过，第二部用termux工具栏提供的方向键向下移动到需要的镜像源后按空格选择，按回车继续。随后输入`pkg intall x11-repo root-repo tur-repo`安装需要的软件源。
+![Screenshot_20231110-153716_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/337d9b84-2c3b-4192-a5d2-6f7a9c0d2daa)
+![Screenshot_20231110-165021_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/a8a49d85-5f39-4183-a5f2-f8682691407e)
+
+安装好软件源之后再次输入`termux-change-repo`命令对新安装的软件源进行换源，如图所示
+![Screenshot_20231110-154006_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/e6f16bda-e6a6-4678-88f2-c4ec9748e54b)
+![Screenshot_20231110-154023_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/f9a37419-07ed-4196-bd35-3562caea9b19)
+
+
 
 
 ```
