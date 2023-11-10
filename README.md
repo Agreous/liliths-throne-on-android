@@ -103,7 +103,7 @@ su user
 1.安装中文字体，输入法与一些工具
 
 ```
-sudo apt install networkmanager pulseaudio noto-fonts-cjk git fcitx5* locales
+sudo apt install network-manager pulseaudio fonts-noto-cjk git fcitx5* locales
 ```
 
 2.设定系统时区与语言，输入法
