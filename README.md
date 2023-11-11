@@ -19,7 +19,7 @@
 ![Screenshot_20231110-165021_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/a8a49d85-5f39-4183-a5f2-f8682691407e)
 
 
-安装好软件源之后再次输入`termux-change-repo`命令对新安装的软件源进行换源，如图所示
+安装好软件源之后先输入`pkg upgrade`进行软件升级。再输入`termux-change-repo`命令对新安装的软件源进行换源，如图所示
 ![Screenshot_20231110-154006_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/e6f16bda-e6a6-4678-88f2-c4ec9748e54b)
 ![Screenshot_20231110-154023_Termux](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/f9a37419-07ed-4196-bd35-3562caea9b19)
 
