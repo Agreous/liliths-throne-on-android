@@ -210,6 +210,9 @@ chmod +x .shortcuts/startproot.sh
 ```
 最后在手机桌面添加Termux Widget提供的小部件，点击一下小部件右上角的刷新按钮就可以使用一键启动脚本了。
 
+## 手动启动桌面环境
+在termux程序主界面右滑呼出菜单，选择NEW SESSION建立一个新的会话。在这个新会话当中输入`termux-x11 :1`启动X11服务器，然后切回第一个会话，登录容器，输入`export DISPLAY=:1`回车后按你安装的桌面环境输入`startplasma-x11`或`xfce4-session`。最后切出桌面启动termux-x11程序即可使用桌面环境。
+
 ## 安装JAVA环境
 debian的软件源中有openjdk,因此可以直接安装。
 输入`sudo apt install openjdk-17-jdk`即可安装。
