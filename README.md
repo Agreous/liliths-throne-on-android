@@ -148,7 +148,7 @@ sudo apt install xfce4 xfce4-goodies
 ```
 
 ## 设置一键启动
-首先需要确保[termux-api](https://github.com/termux/termux-api)和[termux-widget](https://github.com/termux/)都已被安装，随后赋予termux允许显示在其他应用上层权限。然后在termux程序内（注意，不是proot容器内，如果你在proot容器内，输入exit命令退出proot容器）输入以下命令创建用于一键启动的脚本
+首先需要确保[termux-api](https://github.com/termux/termux-api)和[termux-widget](https://github.com/termux/termux-widget)都已被安装，随后赋予termux允许显示在其他应用上层权限。然后在termux程序内（注意，不是proot容器内，如果你在proot容器内，输入exit命令退出proot容器）输入以下命令创建用于一键启动的脚本
 ```
 mkdir .shortcuts
 vim .shortcuts/startproot.sh
