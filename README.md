@@ -222,7 +222,7 @@ debian的软件源中有openjdk,因此可以直接安装。
 启动游戏的方法很简单，在游戏根目录打开终端，输入`java -jar 游戏主文件.jar`就可以启动游戏，但需要注意的是`java -jar`这一命令对文件名有着较为严格的要求，在使用前需要将游戏主文件文件名内的空格和特殊字符删除。
 
 ## 如何在手机与proot容器之间共享文件
-下载并安装[MT管理器](https://mt2.cn/download/)，在termux程序下输入`termux-setup-storage`,对给出的任何提示无脑按y，之后打开MT管理器，点击程序主界面左上角的三条横线就可以看到Termux Home选项卡了。我们安装的proot容器文件位于该文件夹内的/installed-rootfs/archlinux文件夹当中。
+下载并安装[MT管理器](https://mt2.cn/download/)，在termux程序下输入`termux-setup-storage`,对给出的任何提示无脑按y，之后打开MT管理器，点击程序主界面左上角的三条横线就可以看到Termux Home选项卡了。我们安装的proot容器文件位于该文件夹内的/installed-rootfs/debian文件夹当中。
 
 ## 最终效果
 ![Screenshot_2023-10-13-13-50-11-539_com termux x11](https://github.com/Agreous/liliths-throne-on-android/assets/46571579/46424a9c-b26c-42f1-b61b-c6c195bb7726)
