@@ -5,7 +5,7 @@
 由于莉莉丝的王座是使用JAVA进行开发的游戏，并不能方便的移植到移动端基于安卓的设备上。因此本文将通过使用termux安装proot linux容器的方式来曲线实现在安卓手机上游玩莉莉丝的王座。
 
 ### 警告
-因为我们需要在手机上额外跑一个近乎完整的linux桌面环境，因此需要有至少6GB的系统内存和至少10GB的储存空间才能完成这一教程。同时，因为本教程采用无需root的proot容器方案，会对linux容器的运行造成一定的性能损失，以及无法使用大部分的图形加速能力。
+因为我们需要在手机上额外跑一个近乎完整的linux桌面环境，因此需要有至少6GB的系统内存和至少10GB的储存空间才能完成这一教程。同时，因为本教程采用无需root的proot容器方案，会对linux容器的运行造成一定的性能损失，以及无法使用大部分的硬件图形加速能力。
 
 ### 安装应用程序
 为了安装proot容器和linux桌面环境并实现一键启动，我们需要安装以下app：[termux](https://github.com/termux/termux-app),[termux-x11](https://github.com/termux/termux-x11),[termux-api](https://github.com/termux/termux-api),[termux-widget](https://github.com/termux/termux-widget)。点击链接进入对应github页面之后下载releases中最新发布版本，对于termux,选择后缀带有universal的安装包，对于termux-x11,进入github页面后点击Actions页面选择最新build下载带有universal后缀的压缩包解压得到安装包。
@@ -230,7 +230,7 @@ debian的软件源中有openjdk,因此可以直接安装。
 ### FAQ
 
 #### 那么，该从哪里获取aarch64版本的游戏呢
-[sir,this way](https://github.com/chinese-liliths-throne/liliths-throne-chinese-localization)
+[sir,this way](https://github.com/chinese-liliths-throne/liliths-throne-chinese-localization/tags)
 
 或者你也可以自己编译，但那就是另一段故事了
 
@@ -238,7 +238,8 @@ debian的软件源中有openjdk,因此可以直接安装。
 因为作者提供的jar版本游戏不包含任何依赖库文件，而依赖之一javafx在很多平台的高版本openjdk中并不包含，就算是提供了openjfx(和javafx是一样的)包的平台通常也因为分包安装导致java无法直接调用需要的库文件，导致运行作者给出的jar文件通常会报错。为游戏打包依赖库文件可以解决这个问题，但是就需要根据目标平台来打包所需的依赖库文件了。因此就失去了平台通用性。
 
 #### 之前的教程是以arch linux为基础的，为什么要换成debian呢
-因为大费周章安装一个linux容器就为了玩一个黄油实在是太浪费了，日后你还可以参照其他教程为这个容器安装box86/box64和wine来玩更多黄油，而arm版的arch linux不能提供32位的库文件，会对之后安装这些东西造成阻碍。因此我更换了教程的发行版。
+因为大费周章安装一个linux容器就为了玩一个黄油实在是太浪费了，日后你还可以参照其他教程为这个容器安装box86/box64和wine来玩更多黄油，而arm版的arch linux是单架构发行版，不能提供32位的库文件，会对之后安装这些东西造成阻碍。因此我更换了教程所使用的发行版。
+更新：wine9.0对wow64模式有了进一步的支持，理论上只需要64位库也能运行32位软件。
 
 ## 参考资料
 [ivon's blog](https://ivonblog.com/posts/termux-proot-distro-debian/)
