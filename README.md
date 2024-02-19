@@ -230,7 +230,7 @@ debian的软件源中有openjdk,因此可以直接安装。
 ### FAQ
 
 #### 那么，该从哪里获取aarch64版本的游戏呢
-[sir,this way](https://github.com/CKRainbow/liliths-throne-localization/tags)
+[sir,this way](https://github.com/chinese-liliths-throne/liliths-throne-chinese-localization)
 
 或者你也可以自己编译，但那就是另一段故事了
 
